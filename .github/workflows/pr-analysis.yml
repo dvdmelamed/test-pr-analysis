@@ -19,7 +19,7 @@ jobs:
         with:
           agent_id: "OHDBPKCTO9"
           agent_alias_id: "prreview"
-          memory_id: '' # Check Model support
+          #memory_id: '' # Check Model support
           action_prompt: |
             Role: You are a Software Developer and Security Expert
             Task: Review Terraform configuration changes and provide a thorough analysis based on the specified issues and severity levels.
