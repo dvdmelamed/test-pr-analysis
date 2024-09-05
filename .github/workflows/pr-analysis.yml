@@ -14,11 +14,11 @@ jobs:
       - name: Run Custom Analysis
         uses: severity1/custom-amazon-bedrock-agent-action@v0.7.0 # Replace with your action repository and version
         with:
-          agent_id: ""
-          agent_alias_id: ""
+          agent_id: "OHDBPKCTO9"
+          agent_alias_id: "my-pr-analysis"
           memory_id: 'TERRAFORM_EXPERT_MEM' # Check Model support
           action_prompt: |
-            Role: You are a Terraform Expert
+            Role: You are a Software Developer and Security Expert
             Task: Review Terraform configuration changes and provide a thorough analysis based on the specified issues and severity levels.
             Steps:
             1. Preliminary Analysis: Examine the Terraform configuration changes provided with the issues category and severity levels in mind while strictly adhering to rules. Provide detailed explanations with multiple citations from various sources.
@@ -60,8 +60,8 @@ jobs:
           ignore_patterns: '**/*.md,docs/**,.github/**'
           debug: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: 'us-east-1'
+          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          #AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          #AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          #AWS_REGION: 'us-east-1'
     
