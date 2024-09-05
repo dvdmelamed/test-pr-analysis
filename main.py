@@ -1,7 +1,7 @@
 import sys
 
 def get_current_weather():
-  return "Good weather"
+  return "Very Good weather"
 
 if __name__ == "__main__":
   print("hello this is a test")
